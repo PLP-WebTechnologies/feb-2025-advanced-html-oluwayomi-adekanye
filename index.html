@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Elements and Forms</title>
+</head>
+<body>
+    <header>
+        <h1>HTML5 images, lists, tables, forms and input types</h1>
+        <nav>
+            <ul>
+                <li><a href="#images">Images</a></li>
+                <li><a href="#lists">Lists</a></li>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#inputs">Inputs</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="images">
+            <h2>External image from pexels.com</h2>
+            <!-- Add an external image from pexels.com -->
+            <img src="https://images.pexels.com/photos/20787/pexels-photo.jpg" alt="A beautiful landscape" width="500">
+        </section>
+        <section id="lists">
+            <h2>Ordered list with roman numerals</h2>
+            <!-- Add an ordered list with roman numerals -->
+            <ol type="I">
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+            </ol>
+        </section>
+        <section id="tables">
+            <h2>Table of 5 contacts with; name, address, mobile and emails</h2>
+            <!-- Add a table of 5 contacts with; name, address, mobile and emails -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>123 Main Street</td>
+                        <td>123-456-7890</td>
+                        <td>john.doe@gmail.com</td>
+                    </tr>
+            </table>
+        </section>
+        <section id="inputs">
+            <h2>Registration Form</h2>
+            <!-- Add a registration form -->
+            <form action="submit.php" method="post"></form>
+            <fieldset>
+                <legend>Name, email, password, and date fields.</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter Name" pattern="[a-zA-Z\s]{5,}" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter Password" pattern=".{8,}" required><br><br>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" placeholder="Select Date" required>
+            </fieldset>
+            <fieldset>
+                <legend>dropdown, radio buttons, and checkboxes</legend>
+                <label for="country">Country:</label>
+                <select id="country" name="country" aria-placeholder="Select Country" required>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="South Africa">South Africa</option>
+                </select><br><br>
+                <input type="radio" name="sex" id="sex" value="male" placeholder="Select Sex"> Male
+                <input type="radio" name="sex" id="sex" value="female" placeholder="Select Sex"> Female<br><br>
+                <input type="checkbox" name="agree" id="agree" placeholder="Accept Terms and Conditions" required> I agree to the terms and conditions
+            </fieldset>
+            <input type="button" id="submit" name="submit" value="submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Oluwayomi Adekanye</p>
+    </footer>
+</body>
+</html>
